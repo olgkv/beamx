@@ -1,0 +1,77 @@
+require:
+  - rubocop-rspec
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+    - 'bundle/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'db/schema.rb'
+    - 'node_modules/**/*'
+    - 'script/**/*'
+    - 'support/**/*'
+    - 'test/**/*'
+    - 'tmp/**/*'
+# TargetRubyVersion: 3.2.0
+
+Rails:
+  Enabled: true
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - "config/initializers/devise.rb"
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/BlockLength:
+  AllowedMethods: ['describe', 'context', 'feature', 'scenario', 'namespace']
+  Exclude:
+    - "spec/**/*.rb"
+    - "config/environments/production.rb"
+    - 'Rakefile'
+    - '**/*.rake'
+
+Metrics/MethodLength:
+  Exclude:
+    - "db/migrate/*.rb"
+
+Rails/FilePath:
+  Exclude:
+    - "spec/rails_helper.rb"
+
+ConditionalAssignment:
+  Enabled: false
+StringLiterals:
+  Enabled: false
+RedundantReturn:
+  Enabled: false
+WordArray:
+  Enabled: false
+AbcSize:
+  Enabled: false
+MutableConstant:
+  Enabled: false
+SignalException:
+  Enabled: false
+CyclomaticComplexity:
+  Enabled: false
+MissingRespondToMissing:
+  Enabled: false
+MissingSuper:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
