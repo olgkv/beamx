@@ -1,0 +1,14 @@
+# app/views/appointment_mailer/confirmation_email.html.erb
+<h1>Appointment Confirmation</h1>
+
+<p>Dear <%= @email %>,</p>
+
+<p>This email is to confirm your appointment with <%= @service %> on <%= @appointment.date %> .
+ The appointment will take place at <%= @service %>.</p>
+
+
+
+<p>We look forward to seeing you at your appointment!</p>
+
+<p>Best,</p>
+<p><%= @service %></p>
