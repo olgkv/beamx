@@ -1,0 +1,3 @@
+class ServiceProvider < ApplicationRecord
+  validates :name, presence: true, uniqueness: true
+end
