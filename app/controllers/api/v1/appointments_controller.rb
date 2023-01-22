@@ -1,4 +1,5 @@
 class Api::V1::AppointmentsController < ApplicationController
+  before_action :authorize_access_request!
   before_action :set_appointment, only: %i[show update destroy]
 
   def index
