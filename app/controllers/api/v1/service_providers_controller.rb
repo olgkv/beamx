@@ -1,4 +1,5 @@
 class Api::V1::ServiceProvidersController < ApplicationController
+  before_action :authorize_access_request!
   before_action :set_service_provider, only: %i[show update destroy]
 
   def index
