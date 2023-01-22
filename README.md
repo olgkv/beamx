@@ -12,8 +12,8 @@ Using Rails 7 create a simple web application that allows users to schedule appo
 Not necessary but would be nice to have:
 
 - User authorization (JWT/OAuth)
-  – A Memcached for storing frequently used data
+– A Memcached for storing frequently used data
 - A NoSQL database to store some additional data about the appointments
-  - User's preferences: such as the preferred time, location, or provider
-  - Appointment's notes: such as the user's comments, cancellation reason or additional information about the service provided
-    – Backups using AWS S3
+- User's preferences: such as the preferred time, location, or provider
+- Appointment's notes: such as the user's comments, cancellation reason or additional information about the service provided
+– Backups using AWS S3
